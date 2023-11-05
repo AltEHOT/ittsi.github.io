@@ -1344,6 +1344,9 @@ body:not(.v-dark) .site-header .main-logo .dark-logo {
     opacity: 0;
     visibility: visible;
   }
+	  .site-header{
+    background-color: #ececec;
+  }
 }
 @media only screen and (min-width: 992px) {
   .site-header .extend-container .main-navigation ul.extend-container li.dsn-drop-down > a:after {
