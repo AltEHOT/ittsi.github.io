@@ -25,41 +25,58 @@
 </head>
 
 
-<body class="v-light dsn-line-style dsn-effect-scroll dsn-ajax">
-
-
-
-  <!-- ========== Loading Page ========== -->
-  <div class="preloader">
-    <span class="percent ">0</span>
-    <span class="loading-text text-uppercase">Загрузка ...</span>
-    <div class="preloader-bar">
-      <div class="preloader-progress"></div>
-    </div>
-
-    <h1 class="title v-middle d-flex flex-column align-items-center">
-      <span class="text-strok">IT'S IT </span>
-      <span class="text-fill">IT'S IT</span>
-      <strong class="sub-text-strok ms-0">СКОРО ОТКРЫТИЕ</strong>
-    </h1>
-  </div>
-  <!-- ========== End Loading Page ========== -->
-
-
+<body class="v-light dsn-effect-scroll dsn-ajax">
   <!-- ========== Menu ========== -->
-  <div class="site-header dsn-container dsn-load-animate">
-    <div class="extend-container d-flex w-100 align-items-baseline justify-content-between align-items-end">
-      <div class="inner-header p-relative">
+  <div class="site-header d-flex dsn-container dsn-load-animate">
+    <div class="extend-container d-flex w-100 h-100 justify-content-center align-items-center">
+      <div class="col-lg-5 col-md-1 col-sm-1 p-relative  big-menu-container d-flex h-100  justify-content-start align-items-center">
+        <nav class="accent-menu   p-0 big-menu dsn-container  w-100 ">
+          <ul class="extend-container p-relative d-flex flex-row align-items-center w-100">
+            <li class="dsn-active">
+              <a href="#">
+                <span class="dsn-title-menu">Главная</span>
+                <span class="dsn-bg-arrow"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="user-no-selection">
+                <span class="dsn-title-menu">Новинки</span>
+                <span class="dsn-bg-arrow"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="user-no-selection">
+                <span class="dsn-title-menu">О нас</span>
+                <span class="dsn-bg-arrow"></span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <span class="dsn-title-menu">Магазины</span>
+                <span class="dsn-bg-arrow"></span>
+              </a>
+            </li>
+            <li>
+              <a href="services.html">
+                <span class="dsn-title-menu">Подборки</span>
+                <span class="dsn-bg-arrow"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        
+      </div>
+      <div class="col-lg-2 h-100 inner-header p-relative d-flex align-items-center justify-content-center ">
         <div class="main-logo">
           <a href="index.html" data-dsn="parallax">
             <img class="light-logo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-              data-dsn-src="assets/img/logo.png" alt="" />
+              data-dsn-src="assets/img/logo-light.png" alt="" />
             <img class="dark-logo" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-              data-dsn-src="assets/img/logo.png" alt="" />
+              data-dsn-src="assets/img/logo-dark.png" alt="" />
           </a>
         </div>
       </div>
-      <div class="menu-icon d-flex align-items-baseline">
+      <div class="col-lg-5 menu-icon d-flex h-100 justify-content-end align-items-center">
         <div class="text-menu p-relative  font-heading text-transform-upper">
           <div class="p-absolute text-button">Меню</div>
           <div class="p-absolute text-open">Открыть</div>
@@ -70,41 +87,51 @@
           <span class="menu-icon-line p-relative d-inline-block icon-center"></span>
           <span class="menu-icon-line p-relative d-block icon-bottom"></span>
         </div>
+        <input class="search-bar" placeholder="Поиск"/>
+        <button class="nav-btn basket-btn">
+          <img src="assets/img/icons/basket.png">
+        </button>
+        <button class="nav-btn basket-btn">
+          <img src="assets/img/icons/person.png">
+        </button>
+        <button class="nav-btn basket-btn">
+          <img src="assets/img/icons/heart.png">
+        </button>
       </div>
       <nav class="accent-menu dsn-container main-navigation p-absolute  w-100  d-flex align-items-baseline ">
+        <div class="menu-cover-title">Меню</div>
         <ul class="extend-container p-relative d-flex flex-column justify-content-center h-100">
           <li class="dsn-active">
-            <a href="#main" class="user-no-selection">
+            <a href="#" class="user-no-selection">
               <span class="dsn-title-menu">Главная</span>
               <span class="dsn-bg-arrow"></span>
             </a>
           </li>
           <li>
-            <a href="#goods" class="user-no-selection">
-              <span class="dsn-title-menu">Товары</span>
+            <a href="#" class="user-no-selection">
+              <span class="dsn-title-menu">Новинки</span>
               <span class="dsn-bg-arrow"></span>
             </a>
           </li>
           <li>
-            <a href="#adv" class="user-no-selection">
-              <span class="dsn-title-menu">Преимущества</span>
+            <a href="#" class="user-no-selection">
+              <span class="dsn-title-menu">О нас</span>
               <span class="dsn-bg-arrow"></span>
             </a>
           </li>
           <li>
-            <a href="#about">
-              <span class="dsn-title-menu">Контакты</span>
+            <a href="about.html">
+              <span class="dsn-title-menu">Магазины</span>
               <span class="dsn-bg-arrow"></span>
             </a>
           </li>
           <li>
-            <a href="#serv">
+            <a href="services.html">
               <span class="dsn-title-menu">Подборки</span>
               <span class="dsn-bg-arrow"></span>
             </a>
           </li>
         </ul>
-
       </nav>
     </div>
   </div>
@@ -124,7 +151,7 @@
                 <div class="slide-inner h-100">
                   <div class="swiper-wrapper">
                     <div class="slide-item swiper-slide over-hidden">
-                      <div class="image-bg cover-bg w-100 h-100 " data-overlay="0" data-swiper-parallax="50%"
+                      <div class="image-bg cover-bg w-100 h-100 " data-overlay="2" data-swiper-parallax="50%"
                         data-swiper-parallax-scale="1.1">
                         <video class="cover-bg-img" autoplay="autoplay" muted="muted" playsinline="" loop="loop">
                           <source src="assets/img/video/1234.mp4" type="video/mp4">
@@ -138,12 +165,13 @@
                             </div>
                             <div class="d-block"></div>
                             <h2 class="title user-no-selection d-inline-block ">
-                              <a href="#" class="effect-ajax" data-dsn-ajax="slider">Магазин качественой
-                                <strong class="sub-title">брендовой</strong> <br> одежды</a>
+                              <a href="#" class="effect-ajax" data-dsn-ajax="slider">Магазин качественой <br> брендовой
+                                <!-- <strong class="sub-title">брендовой</strong> --> одежды</a>
                             </h2>
                             <hr class="mt-20" />
 
-                            <p class="max-w570 mt-20 description ">Если вы хотите обновить свой гардероб или добавить стильный штрих к своим
+                            <p class="max-w570 mt-20 description ">Если вы хотите обновить свой гардероб или добавить
+                              стильный штрих к своим
                               нарядам-добро пожаловать в ITTSI.</p>
 
                           </div>
@@ -152,7 +180,7 @@
                     </div>
 
                     <div class="slide-item swiper-slide over-hidden">
-                      <div class="image-bg cover-bg w-100 h-100 " data-overlay="0" data-swiper-parallax="50%"
+                      <div class="image-bg cover-bg w-100 h-100 " data-overlay="2" data-swiper-parallax="50%"
                         data-swiper-parallax-scale="1.1">
                         <img class="cover-bg-img" data-dsn-src="assets/img/blog/1.jpg" alt="">
                       </div>
@@ -165,7 +193,7 @@
                             <div class="d-block"></div>
                             <h1 class="title user-no-selection d-inline-block ">
                               <a href="#" class="effect-ajax" data-dsn-ajax="slider">Место для будущих
-                                <strong class="sub-title">новостей</strong> <br> магазина</a>
+                                <!-- <strong class="sub-title">новостей</strong> --> <br>новостей магазина</a>
                             </h1>
                             <hr class="mt-20" />
 
@@ -219,11 +247,17 @@
             </div>
           </header>
           <!-- ========== End Slider Parallax ========== -->
+          <section class="runing-text w-100 d-flex align-items-center">
+            <marquee class="text" behavoir="scroll" width="100%" direction="left" scrollamount="8" height="23px" hspace="20" loop="loop">
+              Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие
+            </marquee>
+          </section>
           <!-- ========== Work Section ========== -->
-          <section id="goods" class="work section-margin dsn-col dsn-col-space dsn-filter not-filter" data-dsn-title="Товары">
+          <section id="goods" class="work section-margin dsn-col dsn-col-space dsn-filter not-filter"
+            data-dsn-title="Товары">
             <div class="container d-flex text-right flex-column align-items-center mb-70">
               <div class="">
-                <h2 class="section-title line-bg-left">Наши товары</h2>
+                <h2 class="section-title line-bg-left">Наши новинки</h2>
                 <p class="sub-heading theme-color  line-shap line-shap-before mt-15 d-inline-block">
                   <span class="background-section pt-5 pb-5 pl-10 pr-10">Список товаров</span>
                 </p>
@@ -231,32 +265,15 @@
             </div>
 
             <div class="container">
-              <div class="filtering-t mb-50 ">
-                <div class="filtering-wrap d-flex align-items-center text-center justify-content-center">
-                  <div class="filtering">
-                    <button type="button" data-filter="*" class="active">
-                      Все
+              <div class="filtering-t">
 
-                    </button>
-                    <button type="button" data-filter=".induction">Новинки</button>
-                    <button type="button" data-filter=".photography">Популярное</button>
-                  </div>
-                </div>
               </div>
-
               <div
                 class="work-inner projects-list work-one-page d-grid grid-md-2  grid-lg-3 p-relative w-100 dsn-item-filter dsn-isotope">
-
                 <div class="work-item  p-relative photography">
                   <a class="effect-ajax" data-dsn-ajax="work" href="#">
                     <div class="work-item-inner">
                       <h5 class="cat p-absolute">Мужчинам, футболки</h5>
-
-                      <div class="line line-top"></div>
-                      <div class="line line-bottom"></div>
-                      <div class="line line-left"></div>
-                      <div class="line line-right"></div>
-
                       <div class="box-img before-z-index" data-overlay="0">
                         <img class="cover-bg-img has-top-bottom"
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -274,42 +291,27 @@
                   <a class="effect-ajax" data-dsn-ajax="work" href="#">
                     <div class="work-item-inner">
                       <h5 class="cat p-absolute">Худи</h5>
-
-                      <div class="line line-top"></div>
-                      <div class="line line-bottom"></div>
-                      <div class="line line-left"></div>
-                      <div class="line line-right"></div>
-
                       <div class="box-img before-z-index" data-overlay="0">
                         <img class="cover-bg-img has-top-bottom"
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                           data-dsn-src="assets/img/clothers/lentame office 46-045 (1).jpg" alt="">
                       </div>
                     </div>
-
                     <div class="box-content">
                       <h4 class="title-block sec-title">Чёрное худи</h4>
                     </div>
                   </a>
                 </div>
-
                 <div class="work-item p-relative photography">
                   <a class="effect-ajax" data-dsn-ajax="work" href="#">
                     <div class="work-item-inner">
                       <h5 class="cat p-absolute">Женщинам, кофты</h5>
-
-                      <div class="line line-top"></div>
-                      <div class="line line-bottom"></div>
-                      <div class="line line-left"></div>
-                      <div class="line line-right"></div>
-
                       <div class="box-img before-z-index" data-overlay="0">
                         <img class="cover-bg-img has-top-bottom"
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                           data-dsn-src="assets/img/clothers/lentame office 46-088.jpg" alt="">
                       </div>
                     </div>
-
                     <div class="box-content">
                       <h4 class="title-block sec-title">Женская кофта</h4>
                     </div>
@@ -320,19 +322,12 @@
                   <a class="effect-ajax" data-dsn-ajax="work" href="#">
                     <div class="work-item-inner">
                       <h5 class="cat p-absolute">Мужчинам, кофты</h5>
-
-                      <div class="line line-top"></div>
-                      <div class="line line-bottom"></div>
-                      <div class="line line-left"></div>
-                      <div class="line line-right"></div>
-
                       <div class="box-img before-z-index" data-overlay="0">
                         <img class="cover-bg-img has-top-bottom"
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                           data-dsn-src="assets/img/clothers/vuwx_NkhETE.jpg" alt="">
                       </div>
                     </div>
-
                     <div class="box-content">
                       <h4 class="title-block sec-title">Мужское поло Lacoste</h4>
                     </div>
@@ -343,19 +338,12 @@
                   <a class="effect-ajax" data-dsn-ajax="work" href="#">
                     <div class="work-item-inner">
                       <h5 class="cat p-absolute">Женщинам, кофты</h5>
-
-                      <div class="line line-top"></div>
-                      <div class="line line-bottom"></div>
-                      <div class="line line-left"></div>
-                      <div class="line line-right"></div>
-
                       <div class="box-img before-z-index" data-overlay="0">
                         <img class="cover-bg-img has-top-bottom"
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                           data-dsn-src="assets/img/clothers/kUkXmoFJAto.jpg" alt="">
                       </div>
                     </div>
-
                     <div class="box-content">
                       <h4 class="title-block sec-title">Чёрное худи</h4>
                     </div>
@@ -366,19 +354,12 @@
                   <a class="effect-ajax" data-dsn-ajax="work" href="#">
                     <div class="work-item-inner">
                       <h5 class="cat p-absolute">Мужчинам, кофты</h5>
-
-                      <div class="line line-top"></div>
-                      <div class="line line-bottom"></div>
-                      <div class="line line-left"></div>
-                      <div class="line line-right"></div>
-
                       <div class="box-img before-z-index" data-overlay="0">
                         <img class="cover-bg-img has-top-bottom"
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                           data-dsn-src="assets/img/clothers/iyRtdnh8qtY.jpg" alt="">
                       </div>
                     </div>
-
                     <div class="box-content">
                       <h4 class="title-block sec-title">Мужская кофта</h4>
                     </div>
@@ -388,131 +369,57 @@
             </div>
           </section>
           <!-- ========== End Work Section ========== -->
-          <!-- ========== testimonial Section ========== -->
-          <section id="adv" class="testimonials testimonials-personal section-margin" data-dsn-title="Преимущества">
-            <div class="container d-flex text-right flex-column align-items-center mb-70">
-              <div class="">
-                <h2 class="section-title line-bg-left">Наши преимущества</h2>
-                <p class="sub-heading theme-color  line-shap line-shap-before mt-15 d-inline-block">
-                  <span class="background-section pt-5 pb-5 pl-10 pr-10">Немного о нас</span>
-                </p>
-              </div>
-            </div>
-
+          <!-- ========== About Section ========== -->
+          <section class="about-section full-width section-padding v-light" data-dsn-title="About Us">
             <div class="container">
-              <div class="testimonials-box box-padding p-relative w-100">
-                <div class="corner corner-left-top"></div>
-                <div class="corner corner-left-bottom"></div>
-                <div class="corner corner-right-top"></div>
-                <div class="corner corner-right-bottom"></div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="box-img box-img-tow-col d-flex h-100">
+                    <div class="img-item pr-15 w-50 mb-80 ">
+                      <img class="cover-bg-img"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-dsn-src="assets/img/help2.jpg" alt="">
+                    </div>
 
-                <div class="testimonials-inner p-relative w-100 dsn-swiper" data-dsn-controller=".testimonial-content"
-                  data-dsn-option='{"slidesPerView":3,"spaceBetween":50 }'>
-
-                  <div class="testimonial-nav text-center">
-                    <div class="testimonial-nav-inner">
-                      <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div class="box-img mb-15" data-swiper-parallax-scale="0.7">
-                              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                data-dsn-src="assets/img/clothers/choise.png" alt="">
-                            </div>
-                            <div class="box-text" data-swiper-parallax="30%" data-swiper-parallax-opacity="0">
-                              <h4 class="title-block mb-10">Большой выбор</h4>
-                              <h5 class="sm-title-block">Для него и для неё</h5>
-                            </div>
-                          </div>
-
-                          <div class="swiper-slide">
-                            <div class="box-img mb-15" data-swiper-parallax-scale="0.7">
-                              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                data-dsn-src="assets/img/clothers/magic.png" alt="">
-                            </div>
-                            <div class="box-text" data-swiper-parallax="30%" data-swiper-parallax-opacity="0">
-                              <h4 class="title-block mb-10">Качество</h4>
-                              <h5 class="sm-title-block">Мы гарантируем качество продукции</h5>
-                            </div>
-                          </div>
-
-                          <div class="swiper-slide">
-                            <div class="box-img mb-15" data-swiper-parallax-scale="0.7">
-                              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                                data-dsn-src="assets/img/clothers/shop.png" alt="">
-                            </div>
-                            <div class="box-text" data-swiper-parallax="30%" data-swiper-parallax-opacity="0">
-                              <h4 class="title-block mb-10">Полноценный магазин</h4>
-                              <h5 class="sm-title-block">прямо около центра</h5>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="img-item w-50 pl-15 mt-80">
+                      <img class="cover-bg-img"
+                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                        data-dsn-src="assets/img/help2.jpg" alt="">
                     </div>
                   </div>
-                  <div class="testimonial-content text-center">
-                    <div class="swiper-container">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <p class="p-larg" data-swiper-parallax="90%" data-swiper-parallax-opacity="0">
-                            Наши полки будут заполнены актуальными осенними образами.
-                            От классических вариантов до смелых экспериментов!
-                          </p>
-                        </div>
+                </div>
 
-                        <div class="swiper-slide">
-                          <p class="p-larg" data-swiper-parallax="90%" data-swiper-parallax-opacity="0">
-                            В ITTSI вы встретите отличный базовый гардероб из натуральных тканей на каждый день. Кроме
-                            того, наши стилисты могут подобрать классные вечерние образы!
-                          </p>
-                        </div>
+                <div class="col-lg-6">
+                  <div class="box-info ">
+                    <div class="mb-30">
+                      <p class="sub-heading line-shap line-shap-after mb-15">
+                        <span class="line-bg-right">О нас
+                        </span>
 
-                        <div class="swiper-slide">
-                          <p class="p-larg" data-swiper-parallax="90%" data-swiper-parallax-opacity="0">
-                            Если вы хотите обновить свой гардероб или добавить стильный штрих к своим нарядам добро
-                            пожаловать в ITTSI. У нас полноценный магазин в Уфе и мы планируем только расширятся
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="dsn-pagination mt-30 dsn-container d-flex justify-content-between">
-                        <div class="swiper-next">
-                          <div class="next-container">
-                            <div class="container-inner">
-                              <div class="triangle"></div>
-                              <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24">
-                                <g class="circle-wrap" fill="none" stroke-width="1" stroke-linejoin="round"
-                                  stroke-miterlimit="10">
-                                  <circle cx="12" cy="12" r="10.5"></circle>
-                                </g>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-prev">
-                          <div class="prev-container">
-                            <div class="container-inner">
-                              <div class="triangle"></div>
-                              <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <g class="circle-wrap" fill="none" stroke-width="1" stroke-linejoin="round"
-                                  stroke-miterlimit="10">
-                                  <circle cx="12" cy="12" r="10.5"></circle>
-                                </g>
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      </p>
+                      <h2 class="section-title">ITTSI - это больше, <br> чем просто одежда</h2>
                     </div>
+
+                    <h5 class="sm-title-block mb-30">We’re a creative agency with an expertise in
+                      make custom websites.</h5>
+
+                    <p>Founded in 2000, Dsn Grid has become one of the best Digital Agency in
+                      ThemeForest. Blue money going forward, but deploy to production. First-order
+                      optimal strategies build on a culture of contribution and inclusion so those
+                      options</p>
+
+                    <a href="https://vk.com/ittsi?t2fs=9fcec13cd63777041c_2" class="mt-30 effect-ajax dsn-button">
+                      <span class="dsn-border border-color-reverse-color"></span>
+                      Подробнее
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <!-- ========== End testimonial Section ========== -->
+          <!-- ========== End about section ========== -->
           <!-- ==========  box description move  ========== -->
-          <div id="about" data-dsn-title="Наши магазины" class="box-seat box-seat-parallax section-margin">
+          <div id="about" data-dsn-title="Наши магазины" class="box-seat box-seat-parallax section-padding">
 
             <div class="inner-img h-v-70" data-overlay="2" data-dsn-grid="move-up">
               <img class="transform-3d "
@@ -542,6 +449,7 @@
 
           </div>
           <!-- ========== End  box description move ========== -->
+
           <!-- ========== blog Section ========== -->
           <section id="serv"
             class="our-blog container our-blog-classic our-blog-full-img not-filter section-margin p-relative dsn-swiper"
@@ -559,9 +467,9 @@
             <div class="swiper-container ">
               <div class="swiper-wrapper">
                 <div class="swiper-slide blog-classic-item">
-                  <div class=" blog-item p-relative d-flex align-items-bottom h-100 w-100">
+                  <div class=" blog-item p-relative d-flex h-100 w-100">
 
-                    <div class="box-img over-hidden">
+                    <div class="box-img over-hidden " data-overlay="2">
                       <img class="cover-bg-img"
                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         data-dsn-src="assets/img/clothers/yo4G3S8QLIk.jpg" alt="">
@@ -597,7 +505,7 @@
 
                 <div class="swiper-slide blog-classic-item">
                   <div class=" blog-item p-relative d-flex align-items-end h-100 w-100">
-                    <div class="box-img over-hidden">
+                    <div class="box-img over-hidden" data-overlay="2">
                       <img class="cover-bg-img"
                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         data-dsn-src="assets/img/clothers/vperrjckc18.jpg" alt="">
@@ -634,7 +542,7 @@
                 <div class="swiper-slide blog-classic-item">
                   <div class=" blog-item p-relative d-flex align-items-center h-100 w-100">
 
-                    <div class="box-img over-hidden">
+                    <div class="box-img over-hidden" data-overlay="2">
                       <img class="cover-bg-img"
                         src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
                         data-dsn-src="assets/img/clothers/B65h5IcL1qU.jpg" alt="">
@@ -706,38 +614,40 @@
           <footer class="footer p-relative background-section">
             <div class="container">
               <div class="footer-info row w-100">
-                <div class="col-xl-5 col-lg-5 col-12 pr-10 pl-10 d-flex flex-column">
+                <div class="col-xl-4 col-lg-4 col-12 pr-10 pl-10 d-flex flex-column">
                   <a href="index.html"><img src="assets/img/logo.png" alt="logo" width="100"></a>
-                  <p class="mt-3">Присоединяйтесь к нам на открытии и вы увидите <br> что стильно одеваться-легко,если вы
+                  <p class="mt-3">Присоединяйтесь к нам на открытии и вы увидите <br> что стильно одеваться-легко,если
+                    вы
                     одеваетесь в ITTSI.<br> Мы с нетерпением ждем встречи с вами.</p>
                 </div>
                 <div
-                  class="col-xl-3 col-lg-3 col-md-6 col-12   mb-4 footer-social footer-contacts d-flex flex-column align-items-start">
+                  class="col-xl-4 col-lg-4 col-md-6 col-12   mb-4 footer-social footer-contacts d-flex flex-column align-items-start">
                   <h4 class="title-block mb-30  text-start">Контакты</h4>
                   <ul class="list-unstyled">
                     <li class="d-flex  align-items-center">
-                      <img class="contact-icon" src="assets/img/icons/clock.png" height="20" />
+                      <img class="contact-icon" src="assets/img/icons/clock.png" height="15" />
                       <div class="d-inline-block contact-text">
-                        <h6 class="mb-0">Открытие</h6>
+                        <p class="mb-0">Открытие</p>
                         <a href="#" data-dsn="parallax" target="_blank" rel="nofollow">20.03.2023</a>
                       </div>
                     </li>
                     <li class="d-flex  align-items-center">
                       <img class="contact-icon" src="assets/img/icons/mail2.png" height="25" />
                       <div class="d-inline-block contact-text">
-                        <h6 class="mb-0">Почта</h6>
+                        <p class="mb-0">Почта</p>
                         <a href="#" data-dsn="parallax" target="_blank" rel="nofollow">test@gmail.com</a>
                       </div>
                     </li>
                     <li class="d-flex  align-items-center">
                       <img class="contact-icon" src="assets/img/icons/phone.png" height="15" />
                       <div class="d-inline-block contact-text">
-                        <h6 class="mb-0">Телефон</h6>
+                        <p class="mb-0">Телефон</p>
                         <a href="#" data-dsn="parallax" target="_blank" rel="nofollow">7 (963) 136-68-98</a>
                       </div>
                     </li>
                   </ul>
                 </div>
+
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12 p-0 mb-4 d-flex flex-column">
                   <h4 class="title-block mb-20  text-start">Где мы находимся?</h4>
                   <div class="subscribe-form position-relative overflow-hidden">
@@ -757,7 +667,8 @@
                           <a href="#" data-dsn="parallax" target="_blank" rel="nofollow">Телеграм.</a>
                         </li>
                         <li class="over-hidden">
-                          <a href="https://vk.com/ittsi" data-dsn="parallax" target="_blank" rel="nofollow">В контакте.</a>
+                          <a href="https://vk.com/ittsi" data-dsn="parallax" target="_blank" rel="nofollow">В
+                            контакте.</a>
                         </li>
                         <li class="over-hidden">
                           <a href="#" data-dsn="parallax" target="_blank" rel="nofollow">Pinterest.</a>
@@ -790,15 +701,6 @@
   </main>
 
 
-  <!-- ========== Scroll Right Page To Top Page ========== -->
-  <div class="scroll-to-top">
-    <img src="assets/img/scroll_top.svg" alt="">
-    <div class="box-numper">
-      <span>10%</span>
-    </div>
-  </div>
-  <!-- ========== End Scroll Right Page To Top Page ========== -->
-
 
   <!-- ========== Cursor Page ========== -->
   <div class="cursor">
@@ -815,11 +717,6 @@
 
   </div>
   <!-- ========== End Cursor Page ========== -->
-
-
-
-  <!-- ========== paginate-right-page ========== -->
-  <div class="dsn-paginate-right-page"></div>
 
   <!-- ========== Line left & right with creative page ========== -->
   <div class="line-border-style w-100 h-100"></div>
