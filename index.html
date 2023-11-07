@@ -27,10 +27,11 @@
 
 <body class="v-light dsn-effect-scroll dsn-ajax">
   <!-- ========== Menu ========== -->
-  <div class="site-header d-flex dsn-container dsn-load-animate">
+  <header class="site-header d-flex dsn-container dsn-load-animate">
     <div class="extend-container d-flex w-100 h-100 justify-content-center align-items-center">
-      <div class="col-lg-5 col-md-1 col-sm-1 p-relative  big-menu-container d-flex h-100  justify-content-start align-items-center">
-        <nav class="accent-menu   p-0 big-menu dsn-container  w-100 ">
+      <div
+        class="col-lg-5 col-md-1 col-sm-1 p-relative  big-menu-container d-flex h-100  justify-content-start align-items-center">
+        <nav class="accent-menu p-0 big-menu dsn-container  w-100 ">
           <ul class="extend-container p-relative d-flex flex-row align-items-center w-100">
             <li class="dsn-active">
               <a href="#">
@@ -46,25 +47,25 @@
             </li>
             <li>
               <a href="#" class="user-no-selection">
-                <span class="dsn-title-menu">О нас</span>
+                <span class="dsn-title-menu">Женское</span>
                 <span class="dsn-bg-arrow"></span>
               </a>
             </li>
             <li>
               <a href="about.html">
-                <span class="dsn-title-menu">Магазины</span>
+                <span class="dsn-title-menu">Мужское</span>
                 <span class="dsn-bg-arrow"></span>
               </a>
             </li>
             <li>
               <a href="services.html">
-                <span class="dsn-title-menu">Подборки</span>
+                <span class="dsn-title-menu">Образы</span>
                 <span class="dsn-bg-arrow"></span>
               </a>
             </li>
           </ul>
         </nav>
-        
+
       </div>
       <div class="col-lg-2 h-100 inner-header p-relative d-flex align-items-center justify-content-center ">
         <div class="main-logo">
@@ -76,18 +77,19 @@
           </a>
         </div>
       </div>
-      <div class="col-lg-5 menu-icon d-flex h-100 justify-content-end align-items-center">
-        <div class="text-menu p-relative  font-heading text-transform-upper">
-          <div class="p-absolute text-button">Меню</div>
-          <div class="p-absolute text-open">Открыть</div>
-          <div class="p-absolute text-close">Закрыть</div>
+      <div class="col-lg-5  d-flex h-100 justify-content-end align-items-center">
+        <div class="menu-icon d-flex h-100 justify-content-end align-items-center">
+          <div class="text-menu p-relative  font-heading text-transform-upper">
+            <div class="p-absolute text-button">Меню</div>
+            <div class="p-absolute text-open">Открыть</div>
+            <div class="p-absolute text-close">Закрыть</div>
+          </div>
+          <div class="icon-m" data-dsn="parallax" data-dsn-move="10">
+            <span class="menu-icon-line p-relative d-inline-block icon-top"></span>
+            <span class="menu-icon-line p-relative d-inline-block icon-center"></span>
+            <span class="menu-icon-line p-relative d-block icon-bottom"></span>
+          </div>
         </div>
-        <div class="icon-m" data-dsn="parallax" data-dsn-move="10">
-          <span class="menu-icon-line p-relative d-inline-block icon-top"></span>
-          <span class="menu-icon-line p-relative d-inline-block icon-center"></span>
-          <span class="menu-icon-line p-relative d-block icon-bottom"></span>
-        </div>
-        <input class="search-bar" placeholder="Поиск"/>
         <button class="nav-btn basket-btn">
           <img src="assets/img/icons/basket.png">
         </button>
@@ -109,7 +111,7 @@
           </li>
           <li>
             <a href="#" class="user-no-selection">
-              <span class="dsn-title-menu">Новинки</span>
+              <span class="dsn-title-menu">Поступления</span>
               <span class="dsn-bg-arrow"></span>
             </a>
           </li>
@@ -134,7 +136,7 @@
         </ul>
       </nav>
     </div>
-  </div>
+  </header>
   <!-- ========== End Menu ========== -->
 
 
@@ -144,78 +146,58 @@
       <div class="main-content">
         <div class="wrapper">
           <!-- ========== Slider Parallax ========== -->
-          <header id="main" data-dsn-title="Интересное"
-            class="main-slider  has-horizontal p-relative w-100 h-100-v dsn-header-animation">
+          <div class="main-slider full-width has-horizontal p-relative w-100 h-100-v dsn-header-animation">
             <div class="content-slider p-relative w-100 h-100 over-hidden v-dark-head">
               <div class="bg-container  dsn-hero-parallax-img p-relative w-100 h-100">
                 <div class="slide-inner h-100">
                   <div class="swiper-wrapper">
+
                     <div class="slide-item swiper-slide over-hidden">
-                      <div class="image-bg cover-bg w-100 h-100 " data-overlay="2" data-swiper-parallax="50%"
+                      <div class="image-bg cover-bg w-100 h-100 " data-overlay="3" data-swiper-parallax="85%"
                         data-swiper-parallax-scale="1.1">
                         <video class="cover-bg-img" autoplay="autoplay" muted="muted" playsinline="" loop="loop">
                           <source src="assets/img/video/1234.mp4" type="video/mp4">
                         </video>
                       </div>
                       <div class="slide-content p-absolute ">
-                        <div class="content p-relative row align-items-end">
-                          <div class="col-lg-6">
-                            <div class="metas d-inline-block mb-20">
-                              <span>Скоро открытие</span>
-                            </div>
-                            <div class="d-block"></div>
-                            <h2 class="title user-no-selection d-inline-block ">
-                              <a href="#" class="effect-ajax" data-dsn-ajax="slider">Магазин качественой <br> брендовой
-                                <!-- <strong class="sub-title">брендовой</strong> --> одежды</a>
-                            </h2>
-                            <hr class="mt-20" />
-
-                            <p class="max-w570 mt-20 description ">Если вы хотите обновить свой гардероб или добавить
-                              стильный штрих к своим
-                              нарядам-добро пожаловать в ITTSI.</p>
-
-                          </div>
+                        <div class="content p-relative">
+                          <p class="max-w570 mb-15 description">Стань частью нашего модного сообщества</p>
+                          <div class="d-block"></div>
+                          <h2 class="title user-no-selection d-inline-block text-uppercase">
+                            мультибрендовый <br> магазин
+                          </h2>
+                          <div class="d-block"></div>
                         </div>
                       </div>
                     </div>
 
                     <div class="slide-item swiper-slide over-hidden">
-                      <div class="image-bg cover-bg w-100 h-100 " data-overlay="2" data-swiper-parallax="50%"
+                      <div class="image-bg cover-bg w-100 h-100 " data-overlay="5" data-swiper-parallax="85%"
                         data-swiper-parallax-scale="1.1">
-                        <img class="cover-bg-img" data-dsn-src="assets/img/blog/1.jpg" alt="">
+                        <img class="cover-bg-img"
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-dsn-src="assets/img/header.jpg" alt="">
                       </div>
-                      <div class="slide-content p-absolute ">
-                        <div class="content p-relative row align-items-center">
-                          <div class="col-lg-5">
-                            <div class="metas d-inline-block mb-20">
-                              <span>Тест</span>
-                            </div>
-                            <div class="d-block"></div>
-                            <h1 class="title user-no-selection d-inline-block ">
-                              <a href="#" class="effect-ajax" data-dsn-ajax="slider">Место для будущих
-                                <!-- <strong class="sub-title">новостей</strong> --> <br>новостей магазина</a>
-                            </h1>
-                            <hr class="mt-20" />
-
-                            <p class="max-w570 mt-20 description ">Сода можно добавить рекламный банер, информацию о
-                              скидках и акциях или дополнительную информацию.</p>
-
-                          </div>
+                      <div class="slide-content p-absolute  ">
+                        <div class="content p-relative">
+                          <p class="max-w570 mb-15 description">этот слайд я уберу как и кнопки внизу</p>
+                          <div class="d-block"></div>
+                          <h1 class="title user-no-selection d-inline-block text-uppercase">
+                            Просто увидеть <br> анимацию
+                          </h1>
+                          <div class="d-block"></div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
               <div class="dsn-slider-content p-absolute h-100 w-100 ">
-                <div class="dsn-container d-flex align-items-center">
-
+                <div class="dsn-container  d-flex align-items-center justify-content-center text-center">
                 </div>
               </div>
             </div>
-            <div
-              class="control-nav dsn-load-animate p-absolute w-100 d-flex justify-content-end  dsn-container v-dark-head">
+            <div class="control-nav p-absolute w-100 d-flex justify-content-center  dsn-container v-dark-head">
               <div class="prev-container">
                 <div class="container-inner">
                   <div class="triangle"></div>
@@ -230,7 +212,7 @@
               <div class="slider-counter d-flex align-items-center">
                 <span class="slider-current-index">01</span>
                 <span class="slider-counter-delimiter"></span>
-                <span class="slider-total-index">02</span>
+                <span class="slider-total-index">05</span>
               </div>
 
               <div class="next-container">
@@ -245,11 +227,12 @@
               </div>
 
             </div>
-          </header>
+          </div>
           <!-- ========== End Slider Parallax ========== -->
           <section class="runing-text w-100 d-flex align-items-center">
-            <marquee class="text" behavoir="scroll" width="100%" direction="left" scrollamount="8" height="23px" hspace="20" loop="loop">
-              Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие • Скоро открытие
+            <marquee class="text" behavoir="scroll" width="100%" direction="left" scrollamount="5" height="23px"
+              hspace="20" loop="loop">
+              Скоро открытие • Уфа • ТЦ МИР • 2 уровень • Южная галерея • Скоро открытие • Уфа • ТЦ МИР • 2 уровень • Южная галерея • Скоро открытие • Уфа • ТЦ МИР • 2 уровень • Южная галерея • Скоро открытие • Уфа • ТЦ МИР • 2 уровень • Южная галерея • Скоро открытие • Уфа • ТЦ МИР • 2 уровень • Южная галерея • Скоро открытие • Уфа • ТЦ МИР • 2 уровень • Южная галерея • Скоро открытие • Уфа • ТЦ МИР • 2 уровень • Южная галерея 
             </marquee>
           </section>
           <!-- ========== Work Section ========== -->
@@ -257,7 +240,7 @@
             data-dsn-title="Товары">
             <div class="container d-flex text-right flex-column align-items-center mb-70">
               <div class="">
-                <h2 class="section-title line-bg-left">Наши новинки</h2>
+                <h2 class="section-title line-bg-left">Новые поступления</h2>
                 <p class="sub-heading theme-color  line-shap line-shap-before mt-15 d-inline-block">
                   <span class="background-section pt-5 pb-5 pl-10 pr-10">Список товаров</span>
                 </p>
@@ -266,14 +249,22 @@
 
             <div class="container">
               <div class="filtering-t">
+                <div class="filtering-wrap d-flex align-items-center text-center justify-content-center">
+                  <div class="filtering">
+                    <button type="button" data-filter="*" class="active">
+                      Все
+                    </button>
+                    <button type="button" data-filter=".woman">Женское</button>
+                    <button type="button" data-filter=".man">Мужское</button>
+                  </div>
+                </div>
 
               </div>
               <div
                 class="work-inner projects-list work-one-page d-grid grid-md-2  grid-lg-3 p-relative w-100 dsn-item-filter dsn-isotope">
-                <div class="work-item  p-relative photography">
+                <div class="work-item  p-relative man">
                   <a class="effect-ajax" data-dsn-ajax="work" href="#">
                     <div class="work-item-inner">
-                      <h5 class="cat p-absolute">Мужчинам, футболки</h5>
                       <div class="box-img before-z-index" data-overlay="0">
                         <img class="cover-bg-img has-top-bottom"
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -283,29 +274,13 @@
 
                     <div class="box-content">
                       <h4 class="title-block sec-title">Мужское поло Lacoste</h4>
+                      <p class="w-100 text-center">12000 Р</p>
                     </div>
                   </a>
                 </div>
-
-                <div class="work-item p-relative photography">
+                <div class="work-item p-relative woman">
                   <a class="effect-ajax" data-dsn-ajax="work" href="#">
                     <div class="work-item-inner">
-                      <h5 class="cat p-absolute">Худи</h5>
-                      <div class="box-img before-z-index" data-overlay="0">
-                        <img class="cover-bg-img has-top-bottom"
-                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                          data-dsn-src="assets/img/clothers/lentame office 46-045 (1).jpg" alt="">
-                      </div>
-                    </div>
-                    <div class="box-content">
-                      <h4 class="title-block sec-title">Чёрное худи</h4>
-                    </div>
-                  </a>
-                </div>
-                <div class="work-item p-relative photography">
-                  <a class="effect-ajax" data-dsn-ajax="work" href="#">
-                    <div class="work-item-inner">
-                      <h5 class="cat p-absolute">Женщинам, кофты</h5>
                       <div class="box-img before-z-index" data-overlay="0">
                         <img class="cover-bg-img has-top-bottom"
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -314,14 +289,28 @@
                     </div>
                     <div class="box-content">
                       <h4 class="title-block sec-title">Женская кофта</h4>
+                      <p class="w-100 text-center">12000 Р</p>
                     </div>
                   </a>
                 </div>
-
-                <div class="work-item  p-relative induction">
+                <div class="work-item p-relative man">
                   <a class="effect-ajax" data-dsn-ajax="work" href="#">
                     <div class="work-item-inner">
-                      <h5 class="cat p-absolute">Мужчинам, кофты</h5>
+                      <div class="box-img before-z-index" data-overlay="0">
+                        <img class="cover-bg-img has-top-bottom"
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-dsn-src="assets/img/clothers/lentame office 46-045 (1).jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="box-content">
+                      <h4 class="title-block sec-title">Чёрное худи</h4>
+                      <p class="w-100 text-center">12000 Р</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="work-item  p-relative man">
+                  <a class="effect-ajax" data-dsn-ajax="work" href="#">
+                    <div class="work-item-inner">
                       <div class="box-img before-z-index" data-overlay="0">
                         <img class="cover-bg-img has-top-bottom"
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -329,15 +318,14 @@
                       </div>
                     </div>
                     <div class="box-content">
-                      <h4 class="title-block sec-title">Мужское поло Lacoste</h4>
+                      <h4 class="title-block sec-title">Мужской свитшот</h4>
+                      <p class="w-100 text-center">12000 Р</p>
                     </div>
                   </a>
                 </div>
-
-                <div class="work-item p-relative induction">
+                <div class="work-item p-relative woman">
                   <a class="effect-ajax" data-dsn-ajax="work" href="#">
                     <div class="work-item-inner">
-                      <h5 class="cat p-absolute">Женщинам, кофты</h5>
                       <div class="box-img before-z-index" data-overlay="0">
                         <img class="cover-bg-img has-top-bottom"
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -345,15 +333,14 @@
                       </div>
                     </div>
                     <div class="box-content">
-                      <h4 class="title-block sec-title">Чёрное худи</h4>
+                      <h4 class="title-block sec-title">Чёрная кофта</h4>
+                      <p class="w-100 text-center">12000 Р</p>
                     </div>
                   </a>
                 </div>
-
-                <div class="work-item p-relative Product">
+                <div class="work-item p-relative man">
                   <a class="effect-ajax" data-dsn-ajax="work" href="#">
                     <div class="work-item-inner">
-                      <h5 class="cat p-absolute">Мужчинам, кофты</h5>
                       <div class="box-img before-z-index" data-overlay="0">
                         <img class="cover-bg-img has-top-bottom"
                           src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
@@ -362,6 +349,52 @@
                     </div>
                     <div class="box-content">
                       <h4 class="title-block sec-title">Мужская кофта</h4>
+                      <p class="w-100 text-center">12000 Р</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="work-item  p-relative woman">
+                  <a class="effect-ajax" data-dsn-ajax="work" href="#">
+                    <div class="work-item-inner">
+                      <div class="box-img before-z-index" data-overlay="0">
+                        <img class="cover-bg-img has-top-bottom"
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-dsn-src="assets/img/clothers/lentame office 46-058.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="box-content">
+                      <h4 class="title-block sec-title">Женский топ</h4>
+                      <p class="w-100 text-center">12000 Р</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="work-item p-relative man">
+                  <a class="effect-ajax" data-dsn-ajax="work" href="#">
+                    <div class="work-item-inner">
+                      <div class="box-img before-z-index" data-overlay="0">
+                        <img class="cover-bg-img has-top-bottom"
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-dsn-src="assets/img/clothers/lentame office 46-021.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="box-content">
+                      <h4 class="title-block sec-title">Мужской свитшот HUGO</h4>
+                      <p class="w-100 text-center">12000 Р</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="work-item p-relative woman">
+                  <a class="effect-ajax" data-dsn-ajax="work" href="#">
+                    <div class="work-item-inner">
+                      <div class="box-img before-z-index" data-overlay="0">
+                        <img class="cover-bg-img has-top-bottom"
+                          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                          data-dsn-src="assets/img/clothers/lentame office 46-074.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="box-content">
+                      <h4 class="title-block sec-title">Женский свитер</h4>
+                      <p class="w-100 text-center">12000 Р</p>
                     </div>
                   </a>
                 </div>
@@ -374,18 +407,8 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-6">
-                  <div class="box-img box-img-tow-col d-flex h-100">
-                    <div class="img-item pr-15 w-50 mb-80 ">
-                      <img class="cover-bg-img"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-dsn-src="assets/img/help2.jpg" alt="">
-                    </div>
-
-                    <div class="img-item w-50 pl-15 mt-80">
-                      <img class="cover-bg-img"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-dsn-src="assets/img/help2.jpg" alt="">
-                    </div>
+                  <div class="box-info d-flex flex-row align-items-center mb-60">
+                    <h2 class="section-title"><stong class="ittsi-blue">Ittsi</stong> - это больше, <br> чем просто одежда</h2>
                   </div>
                 </div>
 
@@ -393,11 +416,8 @@
                   <div class="box-info ">
                     <div class="mb-30">
                       <p class="sub-heading line-shap line-shap-after mb-15">
-                        <span class="line-bg-right">О нас
-                        </span>
-
+                        <span class="line-bg-right">О нас</span>
                       </p>
-                      <h2 class="section-title">ITTSI - это больше, <br> чем просто одежда</h2>
                     </div>
 
                     <h5 class="sm-title-block mb-30">We’re a creative agency with an expertise in
@@ -418,228 +438,147 @@
             </div>
           </section>
           <!-- ========== End about section ========== -->
-          <!-- ==========  box description move  ========== -->
-          <div id="about" data-dsn-title="Наши магазины" class="box-seat box-seat-parallax section-padding">
-
-            <div class="inner-img h-v-70" data-overlay="2" data-dsn-grid="move-up">
-              <img class="transform-3d "
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-dsn-src="assets/img/clothers/test.jpg">
-            </div>
-            <div class="pro-text background-section box-padding" data-dsn-grid="move-section"
-              data-dsn-responsive="tablet">
-              <div class="mb-30 d-flex text-left flex-column align-items-start">
-                <p class="sub-heading line-shap line-shap-after mb-15">
-                  <span class="line-bg-right">Успей первым </span>
-                </p>
-                <h2 class="section-title">Скоро открытие</h2>
-
-              </div>
-              <p class="mb-10">
-                Наш магазин мультибрендовой одежды рад сообщить о скором открытии! Если вы хотите обновить свой гардероб
-                или добавить стильный штрих к своим нарядам-добро пожаловать в ITTSI.
-              </p>
-
-              <a href="https://yandex.ru/maps/org/ittsi/134785544510/?indoorLevel=1&ll=55.987329%2C54.741197&z=17.03"
-                class="mt-30 dsn-button image-zoom" data-dsn="parallax">
-                <span class="dsn-border border-color-reverse-color"></span>
-                Магазины на карте <span>⟶</span>
-              </a>
-            </div>
-
-          </div>
-          <!-- ========== End  box description move ========== -->
-
-          <!-- ========== blog Section ========== -->
-          <section id="serv"
-            class="our-blog container our-blog-classic our-blog-full-img not-filter section-margin p-relative dsn-swiper"
-            data-dsn-animate="section" data-dsn-option='{"slidesPerView":3,"spaceBetween":10 }'
-            data-dsn-title="Подборки">
+          <!-- ========== Work Section ========== -->
+          <section class="work-section work-no-scale not-filter p-relative dsn-swiper over-hidden pt-section"
+            data-dsn-title="our Work" data-dsn-option='{"slidesPerView":3,"autoplay":true,"centeredSlides":false}'>
             <div class="container d-flex text-right flex-column align-items-center mb-70">
               <div class="">
-                <h2 class="section-title line-bg-left">Подборки стилистов</h2>
+                <h2 class="section-title line-bg-left">Образы от стилистов</h2>
                 <p class="sub-heading theme-color  line-shap line-shap-before mt-15 d-inline-block">
-                  <span class="background-section pt-5 pb-5 pl-10 pr-10">Уникальные образы</span>
+                  <span class="background-section pt-5 pb-5 pl-10 pr-10">Собери свой аутфит</span>
                 </p>
               </div>
             </div>
-
-            <div class="swiper-container ">
+            <div class="swiper-container" data-swiper-autoplay="10000">
               <div class="swiper-wrapper">
-                <div class="swiper-slide blog-classic-item">
-                  <div class=" blog-item p-relative d-flex h-100 w-100">
 
-                    <div class="box-img over-hidden " data-overlay="2">
-                      <img class="cover-bg-img"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-dsn-src="assets/img/clothers/yo4G3S8QLIk.jpg" alt="">
+                <div class="work-item  swiper-slide over-hidden">
+                  <div class="box-img p-relative over-hidden" data-overlay="5">
+                    <img class="cover-bg-img"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-dsn-src="assets/img/clothers/yo4G3S8QLIk.jpg" alt="">
+                  </div>
+                  <div class="box-content">
+                    <div class="metas d-inline-block mb-15">
+                      <span>Образ для нее</span>
                     </div>
-                    <div class="box-content p-relative">
+                    <h4 class="sec-title"><a class="effect-ajax" data-dsn-ajax="work"
+                        href="https://vk.com/ittsi?w=wall-222200752_36"></a>Толстовка Tommy Hilfiger, черная джинсовая
+                      юбка и кроссовки New Balance</h4>
+                    <a href="https://vk.com/ittsi?w=wall-222200752_36" class="link-vist p-relative mt-20">
 
-                      <div class="box-content-body">
-                        <div class="metas">
-                          <span>Образ для нее</span>
-                        </div>
-                        <h4 class="title-block">
-                          <a href="https://vk.com/ittsi?w=wall-222200752_36">Толстовка Tommy Hilfiger, черная джинсовая
-                            юбка и кроссовки New Balance </a>
-                        </h4>
-                        <a href="https://vk.com/ittsi?w=wall-222200752_36" class="link-vist p-relative mt-20">
+                      <span class="link-vist-text">Подробнее</span>
 
-                          <span class="link-vist-text">Подробнее</span>
-
-                          <div class="link-vist-arrow">
-                            <svg viewBox="0 0 80 80">
-                              <polyline points="19.89 15.25 64.03 15.25 64.03 59.33">
-                              </polyline>
-                              <line x1="64.03" y1="15.25" x2="14.03" y2="65.18">
-                              </line>
-                            </svg>
-                          </div>
-                        </a>
+                      <div class="link-vist-arrow">
+                        <svg viewBox="0 0 80 80">
+                          <polyline points="19.89 15.25 64.03 15.25 64.03 59.33">
+                          </polyline>
+                          <line x1="64.03" y1="15.25" x2="14.03" y2="65.18">
+                          </line>
+                        </svg>
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
 
-
-                <div class="swiper-slide blog-classic-item">
-                  <div class=" blog-item p-relative d-flex align-items-end h-100 w-100">
-                    <div class="box-img over-hidden" data-overlay="2">
-                      <img class="cover-bg-img"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-dsn-src="assets/img/clothers/vperrjckc18.jpg" alt="">
+                <div class="work-item  swiper-slide over-hidden">
+                  <div class="box-img p-relative over-hidden" data-overlay="5">
+                    <img class="cover-bg-img"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-dsn-src="assets/img/clothers/vperrjckc18.jpg" alt="">
+                  </div>
+                  <div class="box-content">
+                    <div class="metas d-inline-block mb-15">
+                      <span>Спортивный образ</span>
                     </div>
-                    <div class="box-content p-relative">
+                    <h4 class="sec-title"><a class="effect-ajax" data-dsn-ajax="work" href="https://vk.com/ittsi?w=wall-222200752_28">Спортивный топ Loewe, серый костюм Off
+                      White
+                      и кроссовки New Balance</a></h4>
+                      <a href="https://vk.com/ittsi?w=wall-222200752_28" class="link-vist p-relative mt-20">
 
-                      <div class="box-content-body">
-                        <div class="metas">
-                          <span>Спортивный образ</span>
+                        <span class="link-vist-text">Подробнее</span>
+
+                        <div class="link-vist-arrow">
+                          <svg viewBox="0 0 80 80">
+                            <polyline points="19.89 15.25 64.03 15.25 64.03 59.33">
+                            </polyline>
+                            <line x1="64.03" y1="15.25" x2="14.03" y2="65.18">
+                            </line>
+                          </svg>
                         </div>
-                        <h4 class="title-block">
-                          <a href="https://vk.com/ittsi?w=wall-222200752_28">Спортивный топ Loewe, серый костюм Off
-                            White
-                            и кроссовки New Balance </a>
-                        </h4>
-                        <a href="https://vk.com/ittsi?w=wall-222200752_28" class="link-vist p-relative mt-20">
+                      </a>
+                  </div>
+                </div>
+                <div class="work-item  swiper-slide over-hidden">
+                  <div class="box-img p-relative over-hidden" data-overlay="5">
+                    <img class="cover-bg-img"
+                      src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                      data-dsn-src="assets/img/clothers/B65h5IcL1qU.jpg" alt="">
+                  </div>
 
-                          <span class="link-vist-text">Подробнее</span>
-
-                          <div class="link-vist-arrow">
-                            <svg viewBox="0 0 80 80">
-                              <polyline points="19.89 15.25 64.03 15.25 64.03 59.33">
-                              </polyline>
-                              <line x1="64.03" y1="15.25" x2="14.03" y2="65.18">
-                              </line>
-                            </svg>
-                          </div>
-                        </a>
+                  <div class="box-content">
+                    <div class="metas d-inline-block mb-15">
+                      <span>Мужской образ</span>
+                    </div>
+                    <h4 class="sec-title"><a class="effect-ajax" data-dsn-ajax="work" href="https://vk.com/ittsi?w=wall-222200752_22">Толстовка Gant красного цвета, джогеры,
+                      кроссовки Adidas Yeezy.</a>
+                    </h4>
+                    <a href="https://vk.com/ittsi?w=wall-222200752_22" class="link-vist p-relative mt-20">
+                      <span class="link-vist-text">Подробнее</span>
+                      <div class="link-vist-arrow">
+                        <svg viewBox="0 0 80 80">
+                          <polyline points="19.89 15.25 64.03 15.25 64.03 59.33">
+                          </polyline>
+                          <line x1="64.03" y1="15.25" x2="14.03" y2="65.18">
+                          </line>
+                        </svg>
                       </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide blog-classic-item">
-                  <div class=" blog-item p-relative d-flex align-items-center h-100 w-100">
-
-                    <div class="box-img over-hidden" data-overlay="2">
-                      <img class="cover-bg-img"
-                        src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                        data-dsn-src="assets/img/clothers/B65h5IcL1qU.jpg" alt="">
-                    </div>
-                    <div class="box-content p-relative">
-
-                      <div class="box-content-body">
-                        <div class="metas">
-                          <span>Мужской образ</span>
-                        </div>
-                        <h4 class="title-block">
-                          <a href="https://vk.com/ittsi?w=wall-222200752_22">Толстовка Gant красного цвета, джогеры,
-                            кроссовки Adidas Yeezy. </a>
-                        </h4>
-                        <a href="https://vk.com/ittsi?w=wall-222200752_22" class="link-vist p-relative mt-20">
-
-                          <span class="link-vist-text">Подробнее</span>
-
-                          <div class="link-vist-arrow">
-                            <svg viewBox="0 0 80 80">
-                              <polyline points="19.89 15.25 64.03 15.25 64.03 59.33">
-                              </polyline>
-                              <line x1="64.03" y1="15.25" x2="14.03" y2="65.18">
-                              </line>
-                            </svg>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-
-              <div class="dsn-pagination mt-30 dsn-container d-flex justify-content-between">
-                <div class="swiper-next">
-                  <div class="next-container">
-                    <div class="container-inner">
-                      <div class="triangle"></div>
-                      <svg class="circle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <g class="circle-wrap" fill="none" stroke-width="1" stroke-linejoin="round"
-                          stroke-miterlimit="10">
-                          <circle cx="12" cy="12" r="10.5"></circle>
-                        </g>
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-prev">
-                  <div class="prev-container">
-                    <div class="container-inner">
-                      <div class="triangle"></div>
-                      <svg class="circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <g class="circle-wrap" fill="none" stroke-width="1" stroke-linejoin="round"
-                          stroke-miterlimit="10">
-                          <circle cx="12" cy="12" r="10.5"></circle>
-                        </g>
-                      </svg>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+            <div class="container">
+              <a href="https://vk.com/ittsi?t2fs=9fcec13cd63777041c_2" class="w-100 text-center effect-ajax dsn-button mb-60 mt-60">
+                <span class="dsn-border border-color-reverse-color "></span>
+                Смотреть коллекцию
+              </a>
+            </div>
           </section>
-          <!-- ========== End blog Section ========== -->
+          <!-- ========== End Work Section ========== -->
           <!-- ========== End Video Section ========== -->
           <footer class="footer p-relative background-section">
             <div class="container">
               <div class="footer-info row w-100">
                 <div class="col-xl-4 col-lg-4 col-12 pr-10 pl-10 d-flex flex-column">
-                  <a href="index.html"><img src="assets/img/logo.png" alt="logo" width="100"></a>
-                  <p class="mt-3">Присоединяйтесь к нам на открытии и вы увидите <br> что стильно одеваться-легко,если
-                    вы
-                    одеваетесь в ITTSI.<br> Мы с нетерпением ждем встречи с вами.</p>
+                  <a href="index.html"><img src="assets/img/logo.png" alt="logo" width="150"></a>
+                  <p class="mt-1">
+                    Приглашаем тебя стать частью модного сообщества ITTSI.
+                    Подписывайся на страницу ITTSI и мы вышлем для тебя приглашение на нашу вечеринку в честь
+                    праздничного открытия.
+                  </p>
                 </div>
                 <div
                   class="col-xl-4 col-lg-4 col-md-6 col-12   mb-4 footer-social footer-contacts d-flex flex-column align-items-start">
                   <h4 class="title-block mb-30  text-start">Контакты</h4>
                   <ul class="list-unstyled">
                     <li class="d-flex  align-items-center">
-                      <img class="contact-icon" src="assets/img/icons/clock.png" height="15" />
+                      <img class="contact-icon" src="assets/img/icons/dot-place.png" />
                       <div class="d-inline-block contact-text">
-                        <p class="mb-0">Открытие</p>
-                        <a href="#" data-dsn="parallax" target="_blank" rel="nofollow">20.03.2023</a>
+                        <p class="mb-0">Адрес</p>
+                        <a href="#" data-dsn="parallax" target="_blank" rel="nofollow">Уфа ТЦ Мир, 2 уровень / южная
+                          галерея</a>
                       </div>
                     </li>
                     <li class="d-flex  align-items-center">
-                      <img class="contact-icon" src="assets/img/icons/mail2.png" height="25" />
+                      <img class="contact-icon" src="assets/img/icons/mail2.png" />
                       <div class="d-inline-block contact-text">
                         <p class="mb-0">Почта</p>
                         <a href="#" data-dsn="parallax" target="_blank" rel="nofollow">test@gmail.com</a>
                       </div>
                     </li>
                     <li class="d-flex  align-items-center">
-                      <img class="contact-icon" src="assets/img/icons/phone.png" height="15" />
+                      <img class="contact-icon" src="assets/img/icons/phone.png" />
                       <div class="d-inline-block contact-text">
                         <p class="mb-0">Телефон</p>
                         <a href="#" data-dsn="parallax" target="_blank" rel="nofollow">7 (963) 136-68-98</a>
@@ -670,13 +609,6 @@
                           <a href="https://vk.com/ittsi" data-dsn="parallax" target="_blank" rel="nofollow">В
                             контакте.</a>
                         </li>
-                        <li class="over-hidden">
-                          <a href="#" data-dsn="parallax" target="_blank" rel="nofollow">Pinterest.</a>
-                        </li>
-                        <li class="over-hidden">
-                          <a href="#" data-dsn="parallax" target="_blank" rel="nofollow">Youtube.</a>
-                        </li>
-
                       </ul>
                     </div>
                   </div>
@@ -700,24 +632,6 @@
       </div>
   </main>
 
-
-
-  <!-- ========== Cursor Page ========== -->
-  <div class="cursor">
-
-    <div class="cursor-helper">
-      <span class="cursor-drag">Drag</span>
-      <span class="cursor-view">View</span>
-      <span class="cursor-open"><i class="fas fa-plus"></i></span>
-      <span class="cursor-close">Close</span>
-      <span class="cursor-play">play</span>
-      <span class="cursor-next"><i class="fas fa-chevron-right"></i></span>
-      <span class="cursor-prev"><i class="fas fa-chevron-left"></i></span>
-    </div>
-
-  </div>
-  <!-- ========== End Cursor Page ========== -->
-
   <!-- ========== Line left & right with creative page ========== -->
   <div class="line-border-style w-100 h-100"></div>
 
@@ -734,10 +648,6 @@
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="assets/js/wow.js"></script>
-  <script>
-    new WOW().init();
-  </script>
 </body>
 
 </html>
