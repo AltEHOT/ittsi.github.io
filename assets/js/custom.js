@@ -859,7 +859,14 @@
 
   }
 
-
+  $('.link-vist').magnificPopup({
+    type:'inline',
+    closeBtnInside:true,
+    autoFocusLast: true,
+  });
+  $('.view-collection').magnificPopup({
+    type:'inline',
+  });
   /**
    * Popup Image
    */
