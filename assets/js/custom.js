@@ -1814,7 +1814,7 @@
             inner = $this.find(".slide-inner");
           if (inner.find(".slide-item").length) {
             $slidObject.initSlider($this).then(function ($d) {
-              let swiper = $slidObject.swiperObject($this);
+              let swiper = $slidObject.swiperObject($this, !horizontal);
               dsnGrid.addSwiper(swiper);
             });
           }
