@@ -1,5 +1,4 @@
 
-
 (function ($) {
 
 
@@ -207,7 +206,6 @@
 
 
       if (bodyScroll > $ofContent) {
-
         if (scrDown < bodyScroll) {
           $body.addClass('nav-bg').addClass('hide-nav')
         } else {
@@ -408,10 +406,7 @@
         let
           active = $e.parents(".slide-content"),
           id = active.data("dsn-id"),
-          img = active.parents('.main-slider').find(".slide-item[data-dsn-id=\"" + id + "\"] .cover-bg").first(),
           title = active.find(".title");
-
-        let bg_con = active.parents('.main-slider').find('.bg-container');
 
 
         img.removeClass("hidden");
@@ -858,7 +853,6 @@
 
 
   }
-
   $('.link-vist').magnificPopup({
     type:'inline',
     closeBtnInside:true,
@@ -1720,8 +1714,11 @@
         let Ease = Power3.easeOut;
 
         //--> Open Menu
-        if( window.innerWidth <= 980 ){
-          tl.set(mainIcon.find(".icon-center"), { display: "none" });
+        if (window.innerWidth <= 980) {
+
+        }
+
+        tl.set(mainIcon.find(".icon-center"), { display: "none" });
         tl.to(mainIcon.find(".icon-top"), 0.5, { width: 23, rotation: 45, top: 0, ease: Ease });
         tl.to(mainIcon.find(".icon-bottom"), 0.5, {
           width: 23,
@@ -1798,9 +1795,6 @@
 
         });
         // backMenu = null;
-      }
-        
-
       },
     };
 
@@ -1818,53 +1812,14 @@
           let $this = $(this),
             horizontal = $this.hasClass("has-horizontal"),
             inner = $this.find(".slide-inner");
-
-
-          if (inner.hasClass('dsn-webgl')) {
-            $slidObject.initWebgel($(this)).then(($obj) => {
-              dsn_slider.find(".control-nav .slider-total-index").html(dsnGrid.numberText($obj.imgs.length));
-              dsnGrid.WebGLDistortionHoverEffects($obj, {
-                parent: inner,
-                vertical: !horizontal,
-                nextEl: dsn_slider.find(".next-container"),
-                prevEl: dsn_slider.find(".prev-container"),
-                onComplete: function () {
-
-                },
-                onStart: function (current, oldIndex) {
-                  $slidObject.slideChangeWeb(dsn_slider, horizontal ? "x" : "y", current, oldIndex, this.mat.uniforms.effectFactor.value < 0);
-                },
-              });
-
-            });
-          } else if (inner.find(".slide-item").length) {
+          if (inner.find(".slide-item").length) {
             $slidObject.initSlider($this).then(function ($d) {
-              let swiper = $slidObject.swiperObject($this, !horizontal);
-              $slidObject.slideChange(swiper, $this, horizontal ? "x" : "y");
+              let swiper = $slidObject.swiperObject($this);
               dsnGrid.addSwiper(swiper);
-              console.log(swiper.getTranslate());
-
-
-              $this.find('.next-container').on("click", function () {
-                if (tl.isActive()) return;
-                swiper.slideNext();
-              });
-              $this.find('.prev-container').on("click", function () {
-                if (tl.isActive()) return;
-                swiper.slidePrev();
-              });
-
             });
-
           }
-
-
         });
-
-
       },
-
-
       /**
        *
        * @param dsn_slider
